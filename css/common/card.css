@@ -1,0 +1,126 @@
+/*sản phẩm*/
+.list-spham {
+    display: grid;
+
+    /* tự responsive */
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+
+    gap: 20px;
+
+    margin-bottom: 20px;
+}
+
+/*card sản phẩm*/
+.spham {
+    background: #fff;
+
+    text-align: center;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    transition: 0.3s;
+}
+
+/*hiệu ứng hover*/
+.spham:hover {
+    transform: translateY(-8px);
+}
+
+/*khung ảnh*/
+.spham img {
+    width: 100%;
+
+    height: 220px;
+
+    object-fit: cover;
+
+    display: block;
+
+    background-color: #fdfaf0;
+}
+
+/*khung giá*/
+.tien {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 12px 15px;
+
+    margin: 15px;
+
+    background: #fff7ef;
+
+    border-radius: 18px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/*phần giá*/
+.gia {
+    display: flex;
+
+    align-items: start;
+    justify-items: start;
+}
+
+/*text giá*/
+.text-gia {
+    font-size: 17px;
+
+    font-weight: bold;
+
+    color: red;
+}
+
+/*giá cũ*/
+.text-gia del {
+    font-size: 14px;
+
+    color: #999;
+
+    margin-left: 10px;
+}
+
+/*nút giỏ hàng*/
+.hang {
+    width: 50px;
+
+    height: 50px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #b66843;
+
+    color: white;
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    transition: 0.3s;
+}
+
+/*hover*/
+.hang:hover {
+    transform: scale(1.1);
+
+    background: #9f5736;
+}
+
+/*click*/
+.hang:active {
+    transform: scale(0.95);
+}

@@ -1,0 +1,96 @@
+/* MENU */
+.menu {
+    background-color: #FFF8F0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    position: sticky;
+    /*dính menu*/
+    z-index: 9999;
+    /*menu phải ở trên cùng trên nội dung dưới*/
+    top: 0;
+}
+
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#logo {
+    height: 70px;
+}
+
+#gio {
+    height: 40px;
+    cursor: pointer;
+    justify-content: s;
+}
+
+/* MENU CHÍNH */
+.main-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.main-menu li {
+    position: relative;
+}
+
+.main-menu a {
+    text-decoration: none;
+    color: #5A3E2B;
+    font-weight: bold;
+    padding: 10px 16px;
+    border-radius: 10px;
+    display: block;
+    transition: 0.3s;
+}
+
+.main-menu a:hover {
+    background: #F2C57C;
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* MENU CON */
+.menu-be {
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    background: white;
+    padding: 0;
+    margin: 0;
+    display: none;
+    border: 1px solid #ddd;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.menu-be a {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    border-radius: 0;
+    transform: none;
+}
+
+.menu-be a:hover {
+    background: #F2C57C;
+    color: black;
+}
+
+/* HIỆN MENU CON */
+.down:hover .menu-be {
+    display: block;
+}

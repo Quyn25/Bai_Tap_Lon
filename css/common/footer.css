@@ -1,0 +1,51 @@
+/*phần chân trang */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    /*tự động xuống dòng*/
+    background-color: #f5f9f6;
+    color: #4a5c56;
+    justify-content: space-between;
+
+}
+
+footer ul {
+    list-style: none;
+    color: #52b788;
+}
+
+footer ul li {
+    margin-bottom: 15px;
+}
+
+footer h3 {
+    color: #2d6a4f;
+}
+
+footer a {
+    text-decoration: none
+}
+
+footer img {
+    width: 40px;
+    margin-top: -8;
+    margin-right: 15px;
+}
+
+.lhe li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px
+}
+
+.lhe img {
+    width: 30px;
+}
+
+.copy {
+    flex-basis: 100%;
+    /*ép cột để xuống dòng*/
+    text-align: center;
+    border-top: 1px solid #e2eee9;
+}
