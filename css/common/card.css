@@ -1,24 +1,54 @@
+/*phân loại bánh*/
+section {
+    border-radius: 30px;
+}
+
+.title {
+    font-size: 24px;
+
+    font-weight: bold;
+
+    height: 40px;
+
+    color: #ff5722;
+
+    margin-bottom: 20px;
+
+}
+
 /*sản phẩm*/
 .list-spham {
-    display: grid;
-
-    /* tự responsive */
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    display: flex;
 
     gap: 20px;
 
+    overflow-x: auto;
+
+    scroll-behavior: smooth;
+
     margin-bottom: 20px;
+
+    padding-bottom: 10px;
+}
+
+/*ẩn thanh scroll*/
+.list-spham::-webkit-scrollbar {
+    display: none;
 }
 
 /*card sản phẩm*/
 .spham {
+    min-width: 270px;
+
+    flex-shrink: 0;
+
     background: #fff;
 
     text-align: center;
 
     border-radius: 15px;
 
-    overflow: hidden;
+    overflow: auto;
 
     transition: 0.3s;
 }
@@ -96,7 +126,6 @@
 
     border-radius: 50%;
 
-    background: #b66843;
 
     color: white;
 
@@ -117,7 +146,13 @@
 .hang:hover {
     transform: scale(1.1);
 
-    background: #9f5736;
+    background: #ff5722;
+}
+
+.hang img {
+    width: 24px;
+    height: 24px;
+    background: transparent;
 }
 
 /*click*/
