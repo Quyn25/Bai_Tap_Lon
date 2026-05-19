@@ -1,7 +1,5 @@
 /*phân loại bánh*/
-section {
-    border-radius: 30px;
-}
+
 
 .title {
     font-size: 24px;
@@ -22,7 +20,7 @@ section {
 
     gap: 20px;
 
-    overflow-x: auto;
+    overflow-x: auto; 
 
     scroll-behavior: smooth;
 
@@ -46,7 +44,7 @@ section {
 
     text-align: center;
 
-    border-radius: 15px;
+    border-radius: 30px;
 
     overflow: auto;
 

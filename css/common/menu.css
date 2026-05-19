@@ -66,7 +66,6 @@
     color: #5A3E2B;
     font-weight: bold;
     padding: 10px 16px;
-    border-radius: 10px;
     display: block;
     transition: 0.3s;
 }
@@ -95,7 +94,6 @@
 .menu-be a {
     padding: 12px;
     border-bottom: 1px solid #eee;
-    border-radius: 0;
     transform: none;
 }
 

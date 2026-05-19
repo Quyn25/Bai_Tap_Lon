@@ -4,8 +4,8 @@ body {
     background: #FFF8F0;
 }
 
-/*container dùng chung*/
-.container {
+
+main {
     max-width: 1300px;
     margin: auto;
     width: 100%;
