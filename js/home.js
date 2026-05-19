@@ -58,5 +58,10 @@ function renderProducts(category, containerId) {
   });
 }
 
+// gọi hàm renderProducts để hiển thị sản phẩm theo category vào container tương ứng
+// ở đây có 2 category là "mousse" và "bread salty", tương ứng với 2 container có id là "mousse" và "bread salty"
+// khi trang home.html được tải, hàm renderProducts sẽ được gọi để hiển thị sản phẩm theo category vào container tương ứng
+// "mousse" sẽ hiển thị sản phẩm có category là "mousse" vào container có id là "mousse"
 renderProducts("mousse", "mousse");
+// "bread salty" sẽ hiển thị sản phẩm có category là "bread salty" vào container có id là "bread salty"
 renderProducts("bread salty", "bread salty");
