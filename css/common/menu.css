@@ -1,26 +1,40 @@
 /* MENU */
 .menu {
     background-color: #FFF8F0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
     padding: 15px 0;
+
     position: sticky;
-    /*dính menu*/
-    z-index: 9999;
-    /*menu phải ở trên cùng trên nội dung dưới*/
+
     top: 0;
+
+    z-index: 9999;
 }
 
+/* nội dung menu */
+.menu .container{
+    display: flex;
 
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+/* bên trái */
 .left {
     display: flex;
+
     align-items: center;
+
     gap: 30px;
 }
+
+/* bên phải */
 .right {
     display: flex;
+
     align-items: center;
+
     gap: 20px;
 }
 

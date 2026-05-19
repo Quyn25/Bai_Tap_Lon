@@ -53,6 +53,11 @@ section {
     transition: 0.3s;
 }
 
+/*bỏ gạch dưới của text*/
+a {
+  text-decoration: none !important;
+}
+
 /*hiệu ứng hover*/
 .spham:hover {
     transform: translateY(-8px);
@@ -70,6 +75,8 @@ section {
 
     background-color: #fdfaf0;
 }
+
+
 
 /*khung giá*/
 .tien {

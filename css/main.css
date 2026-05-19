@@ -6,7 +6,7 @@ body {
 
 /*container dùng chung*/
 .container {
-    max-width: 1200px;
+    max-width: 1300px;
     margin: auto;
     width: 100%;
     box-sizing: border-box;
