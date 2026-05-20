@@ -65,3 +65,6 @@ function renderProducts(category, containerId) {
 renderProducts("mousse", "mousse");
 // "bread salty" sẽ hiển thị sản phẩm có category là "bread salty" vào container có id là "bread salty"
 renderProducts("bread salty", "bread salty");
+renderProducts("cake", "cake");
+renderProducts("bread","bread");
+renderProducts("baked goods","baked goods");
