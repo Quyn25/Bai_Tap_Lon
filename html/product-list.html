@@ -3,9 +3,9 @@
 <head>
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/common/menu.css">
-    <link rel="stylesheet" href="../css/banner.css">
     <link rel="stylesheet" href="../css/common/card.css">
     <link rel="stylesheet" href="../css/common/footer.css">
+    <link rel="stylesheet" href="../css/product-list.css">
 </head>
 
 <body>
@@ -18,10 +18,10 @@
                     <ul class="main-menu">
                         <li><a href="../html/trangchu.html">Trang chủ</a></li>
                         <li class="down">
-                            <a href="../html/product-list.html">Sản phẩm</a>
+                            <a href="#">Sản phẩm</a>
                             <ul class="menu-be">
                                 <li><a href="../html/page1.html">Bánh Mousse</a></li>
-                                <li><a href="../html/page2.html">Bánh mặn</a></li>
+                                <li><a href="../html/page2.html">Bánh mì & Bánh mặn</a></li>
                                 <li><a href="../html/page3.html">Bánh ngọt nhỏ</a></li>
                             </ul>
                         </li>
@@ -55,35 +55,73 @@
                 </div>
             </div>
         </section>
-        <div class="banner ">
-            <img src="../assets/image/banner.png">
-        </div>
-        <!--sản phẩm-->
-        <h1 style="text-align: center; color: rgb(175, 198, 122);">SẢN PHẨM NỔI BẬT</h1>
-        <!--Bánh mousse-->
-        <section >
-            <h2 class="title">Bánh Mousse</h2>
-            <div class="list-spham container" id="mousse"></div>
+        <section>
+            <section class="shop-layout container">
+                <!-- bộ lọc -->
+                <aside class="filter-area">
+
+                    <div class="filter">Lọc sản phẩm</div>
+                    <!-- danh mục -->
+                    <div class="filter-card">
+
+                        <h3>Danh mục</h3>
+
+                        <label>
+                            <input type="checkbox" value="mousse">
+                            Bánh mousse
+                        </label>
+
+                        <label>
+                            <input type="checkbox" value="bread salty">
+                            Bánh mặn
+                        </label>
+
+                        <label>
+                            <input type="checkbox" value="cake">
+                            Bánh kem
+                        </label>
+
+                        <label>
+                            <input type="checkbox" value="bread">
+                            Bánh mì
+                        </label>
+
+                        <label>
+                            <input type="checkbox" value="baked goods">
+                            Bánh nướng
+                        </label>
+                    </div>
+
+                    <!-- giá -->
+                    <div class="filter-card">
+
+                        <h3>Mức giá</h3>
+
+                        <label>
+                            <input type="radio" name="price">
+                            Dưới 100k
+                        </label>
+
+                        <label>
+                            <input type="radio" name="price">
+                            100k - 300k
+                        </label>
+
+                        <label>
+                            <input type="radio" name="price">
+                            Trên 300k
+                        </label>
+
+                    </div>
+                </aside>
+
+                <!-- danh sách sản phẩm -->
+                <div class="product-area">
+                    <div class="product-grid" id="all-products"></div>
+                </div>
+            </section>
         </section>
-        <!--Bánh mì & Bánh mặn-->
-        <section >
-            <h2 class="title"> Bánh mặn</h2>
-            <div class="list-spham container" id="bread salty"></div>
-        </section>
-        <section >
-            <h2 class="title">Bánh kem</h2>
-            <div class="list-spham container" id="cake"></div>
-        </section>
-        <section >
-            <h2 class="title">Bánh mì</h2>
-            <div class="list-spham container" id="bread"></div>
-        </section>
-        <section >
-            <h2 class="title">Bánh nướng</h2>
-            <div class="list-spham container" id="baked goods"></div>
-        </section>
-        
-        
+
     </main>
 </body>
 
@@ -137,6 +175,6 @@
 </footer>
 
 <script src="../js/product.js"></script>
-<script src="../js/home.js"></script>
+<script src="../js/product-list.js"></script>
 
 </html>
