@@ -58,3 +58,36 @@
 
     cursor: pointer;
 }
+/*số lượng sản phẩm*/
+.sluong{
+    display: flex;
+
+    align-items: center;
+
+    margin-bottom: 15px;
+
+    gap: 10px;
+
+}
+.tang-giam{
+    background-color: #f5f5f5;
+    border: 1px solid gainsboro;
+    border-radius: 9px;
+    padding: 2px;
+    
+}
+
+.tang-giam button {
+    border: none;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+.tang-giam input {
+  width: 45px;
+  text-align: center; 
+ border: none;
+background-color: whitesmoke;
+font-weight: bold;
+}
+/*ẩn dấu mũi têm tăng giảm??*/

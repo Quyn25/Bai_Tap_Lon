@@ -74,6 +74,19 @@
         <h4>Mô tả sản phẩm</h4>
         <p id="product-desc"></p>
 
+        <!--số lượng sp-->
+        <div class="sluong">
+          <label for="quantity">Số lượng:</label>
+          <div class="tang-giam">
+            <button type="button" class="minus" onclick="giam()">-</button>
+            <!--ô nhập dl-->
+            <input type="number" id="quantity" name="quantity" value="1" min="1"> 
+            <!--value: gtr mặc định -->
+            <button type="button" class="plus" onclick="tang()">+</button>
+
+          </div>
+        </div>
+        
         <button class="add-to-cart">Thêm vào giỏ hàng</button>
       </div>
 

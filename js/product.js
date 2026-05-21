@@ -7,8 +7,8 @@ const products = [
   {
     id: 1,
     name: "Mousse socola",
-    price: 200000,
-    oldPrice: 250000,
+    price: 250000,
+    oldPrice: 300000,
     image: "../assets/image/1.sp1.png",
     category: "mousse",
     desc: "Mousse socola là một loại bánh ngọt có kết cấu nhẹ nhàng và mịn màng, được làm từ socola tan chảy, kem tươi và trứng. Bánh thường có hương vị đậm đà của socola, kết hợp với độ béo ngậy của kem tươi, tạo nên một trải nghiệm thưởng thức tuyệt vời cho những người yêu thích socola.",
@@ -43,8 +43,8 @@ const products = [
   {
     id: 5,
     name: "Mousse xoài",
-    price: 200000,
-    oldPrice: 250000,
+    price: 250000,
+    oldPrice: 300000,
     image: "../assets/image/1.sp5.png",
     category: "mousse",
     desc: "Bánh mousse mang đậm hương vị xoài ngọt mát dễ chịu, kem tươi whipping cream kết hợp cùng sữa chua cốt vani, trang trí thêm xoài trên mặt bánh để thêm đậm vị cùng socola.",
@@ -61,8 +61,8 @@ const products = [
   {
     id: 46,
     name: "Mousse việt quất và cherry",
-    price: 180000,
-    oldPrice: 250000,
+    price: 400000,
+    oldPrice: 450000,
     image: "../assets/image/4.6.jpg",
     category: "mousse",
     desc: "Lớp kem mousse dẻo mịn phủ bột cacao quyến rũ, kết hợp cùng vị chua ngọt mọng nước từ quả việt quất và cherry tươi, mang lại hương vị tươi mát và béo ngậy đan xen hoàn hảo.",
@@ -70,8 +70,8 @@ const products = [
   {
     id: 47,
     name: "Bánh Tart dâu tây phô mai",
-    price: 150000,
-    oldPrice: 200000,
+    price: 300000,
+    oldPrice: 400000,
     image: "../assets/image/4.10.jpg",
     category: "mousse",
     desc: "Lòng đế tart nướng vàng giòn, thơm nức hương bơ ôm lấy phần kem phô mai chua nhẹ, béo ngậy. Bề mặt xếp đầy dâu tây tươi căng mọng, tạo nên vị chua ngọt bùng nổ rất sảng khoái.",
@@ -88,8 +88,8 @@ const products = [
   {
     id: 49,
     name: "Bánh kem chuối",
-    price: 100000,
-    oldPrice: 180000,
+    price: 200000,
+    oldPrice: 380000,
     image: "../assets/image/4.19.jpg",
     category: "mousse",
     desc: "Lớp đế bánh biscuit đắng nhẹ ôm trọn phần nhân chuối chín ngọt lịm. Kem tươi béo ngậy được bắt bông tròn đều mướt mắt và phủ đẫm bột cacao, mang đến cảm giác ngọt ngào, mềm tan.",
@@ -97,7 +97,7 @@ const products = [
   {
     id: 50,
     name: "Bánh Tart Banoffee",
-    price: 120000,
+    price: 200000,
     oldPrice: 180000,
     image: "../assets/image/4.20.jpg",
     category: "mousse",
@@ -106,7 +106,7 @@ const products = [
   {
     id: 51,
     name: "Bánh kem Oreo",
-    price: 120000,
+    price: 220000,
     oldPrice: null,
     image: "../assets/image/4.21.jpg",
     category: "mousse",
@@ -115,7 +115,7 @@ const products = [
   {
     id: 52,
     name: " Mini Mousse trà sữa trân châu đường đen",
-    price: 80000,
+    price: 95000,
     oldPrice: 130000,
     image: "../assets/image/4.33.jpg",
     category: "mousse",
@@ -124,8 +124,8 @@ const products = [
     {
     id: 53,
     name: "Mini Cheesecake xoài tươi",
-    price: 50000,
-    oldPrice: 80000,
+    price: 85000,
+    oldPrice: 10000,
     image: "../assets/image/4.37.jpg",
     category: "mousse",
     desc: "Những ổ bánh kem phô mai nhỏ xinh dẻo mịn, béo ngậy đặc trưng, được phủ lớp kem tươi chảy tràn nhẹ nhàng bên hông và nhấn nhá bằng những khối xoài chín ngọt lịm.",
@@ -133,7 +133,7 @@ const products = [
     {
     id: 54,
     name: "Mousse chanh vàng cắt miếng",
-    price: 65000,
+    price: 95000,
     oldPrice: null,
     image: "../assets/image/4.52.jpg",
     category: "mousse",
@@ -142,7 +142,7 @@ const products = [
     {
     id: 52,
     name: "Tart khoai môn",
-    price: 30000,
+    price: 150000,
     oldPrice: null,
     image: "../assets/image/4.35.jpg",
     category: "mousse",
@@ -153,7 +153,7 @@ const products = [
   {
     id: 7,
     name: "Mochi đậu đỏ",
-    price: 100000,
+    price: 180000,
     oldPrice: null,
     image: "../assets/image/2.sp1.jpg",
     category: "bread salty",
@@ -171,7 +171,7 @@ const products = [
   {
     id: 9,
     name: "Lemon Cupcakes",
-    price: 50000,
+    price: 80000,
     oldPrice: null,
     image: "../assets/image/3.sp2.jpg",
     category: "bread salty",
@@ -180,7 +180,7 @@ const products = [
   {
     id: 10,
     name: "Bánh sừng bò",
-    price: 45000,
+    price: 85000,
     oldPrice: null,
     image: "../assets/image/2.sp3.jpg",
     category: "bread salty",
@@ -189,7 +189,7 @@ const products = [
   {
     id: 11,
     name: "Quiche rau bina",
-    price: 200000,
+    price: 400000,
     oldPrice: null,
     image: "../assets/image/2.sp4.jpg",
     category: "bread salty",
@@ -198,7 +198,7 @@ const products = [
   {
     id: 12,
     name: "Fruit Tart",
-    price: 30000,
+    price: 85000,
     oldPrice: null,
     image: "../assets/image/3.sp3.jpg",
     category: "bread salty",
@@ -207,8 +207,8 @@ const products = [
   {
     id: 13,
     name: "Bánh bông lan trứng muối xốt phô mai",
-    price: 100000,
-    oldPrice: 150000,
+    price: 150000,
+    oldPrice: 250000,
     image:"../assets/image/4.39.jpg",
     category: "bread salty",
     desc: "sự kết hợp hoàn hảo giữa cốt bông lan mềm ẩm, xốp nhẹ và lớp phủ ngập tràn topping. Vị bùi béo của trứng muối, phô mai miếng hòa quyện cùng chà bông đậm đà và xốt phô mai tan chảy mượt mà, tạo nên hương vị mặn ngọt đan xen vô cùng cuốn hút, ăn hoài không ngán."
@@ -261,7 +261,7 @@ const products = [
   {
     id: 19,
     name: "Bánh gối ngàn lớp nhân mặn",
-    price: 30000,
+    price: 45000,
     oldPrice: null,
     image: "../assets/image/4.55.jpg",
     category: "bread salty",
@@ -271,8 +271,8 @@ const products = [
   {
     id: 20,
     name: "Bánh kem cuộn dâu tây",
-    price: 45000,
-    oldPrice: 80000,
+    price: 100000,
+    oldPrice: 150000,
     image: "../assets/image/4.5.jpg",
     category: "cake",
     desc: "Cốt bông lan cuộn siêu mềm xốp, ôm trọn lấy lớp kem tươi thanh mát và những lát dâu tây tươi mọng nước. Vị chua ngọt tự nhiên của dâu tây hòa cùng nét béo nhẹ của kem ăn rất dễ chịu.",
@@ -280,7 +280,7 @@ const products = [
   {
     id: 21,
     name: "Bánh sinh nhật Chocolate dâu tây",
-    price: 100000,
+    price: 400000,
     oldPrice: null,
     image: "../assets/image/4.7.jpg",
     category: "cake",
@@ -289,7 +289,7 @@ const products = [
   {
     id: 22,
     name: "Bánh kem khúc cây",
-    price: 100000,
+    price: 4500000,
     oldPrice: null,
     image: "../assets/image/4.8.jpg",
     category: "cake",
@@ -298,7 +298,7 @@ const products = [
   {
     id: 23,
     name: "Bánh kem Red Velvet",
-    price: 100000,
+    price: 3800000,
     oldPrice: null,
     image: "../assets/image/4.9 (2).jpg",
     category: "cake",
@@ -307,7 +307,7 @@ const products = [
   {
     id: 24,
     name: "Bánh kem chuối xốt caramel",
-    price: 100000,
+    price: 300000,
     oldPrice: null,
     image: "../assets/image/4.9.jpg",
     category: "cake",
@@ -316,7 +316,7 @@ const products = [
   {
     id: 25,
     name: "Orange Basque",
-    price: 100000,
+    price: 250000,
     oldPrice: null,
     image: "../assets/image/4.11.jpg",
     category: "cake",
@@ -334,7 +334,7 @@ const products = [
   {
     id: 27,
     name: "Bánh kem Lotus Biscoff",
-    price: 100000,
+    price: 200000,
     oldPrice: null,
     image: "../assets/image/4.17.jpg",
     category: "cake",
@@ -343,8 +343,8 @@ const products = [
   {
     id: 28,
     name: "Bánh kem chuối xốt caramel",
-    price: 100000,
-    oldPrice: null,
+    price: 150000,
+    oldPrice: 200000,
     image: "../assets/image/4.9.jpg",
     category: "cake",
     desc: "Hương vị chuối chín ngọt tự nhiên kết hợp cùng lớp kem tươi mềm mịn và xốt caramel chảy ngậy đắng nhẹ bao quanh. Chút vụn bánh giòn tan ở chính giữa mang lại kết cấu thú vị.",
@@ -352,7 +352,7 @@ const products = [
   {
     id: 29,
     name: "Bánh Chiffon Matcha phủ xốt xoài tươi",
-    price: 100000,
+    price: 200000,
     oldPrice: null,
     image: "../assets/image/4.27.jpg",
     category: "cake",
@@ -362,7 +362,7 @@ const products = [
   {
     id: 30,
     name: "Bánh sừng bò kẹp kem Matcha",
-    price: 40000,
+    price: 95000,
     oldPrice: null,
     image: "../assets/image/4.15.jpg",
     category: "bread",
@@ -371,7 +371,7 @@ const products = [
   {
     id: 31,
     name: "Bánh sừng bò kẹp kem tươi nho",
-    price: 40000,
+    price: 85000,
     oldPrice: null,
     image: "../assets/image/4.16.jpg",
     category: "bread",
@@ -380,7 +380,7 @@ const products = [
   {
     id: 32,
     name: "Bánh mì gối ngàn lớp Matcha",
-    price: 30000,
+    price: 85000,
     oldPrice: null,
     image: "../assets/image/4.26.jpg",
     category: "bread",
@@ -389,7 +389,7 @@ const products = [
   {
     id: 33,
     name: "Bánh bông lan chanh vàng",
-    price: 40000,
+    price: 60000,
     oldPrice: null,
     image: "../assets/image/4.38.jpg",
     category: "bread",
@@ -398,7 +398,7 @@ const products = [
   {
     id: 34,
     name: "Bánh mì ngọt kem sữa hạnh nhân",
-    price: 30000,
+    price: 50000,
     oldPrice: null,
     image: "../assets/image/4.41.jpg",
     category: "bread",
@@ -407,7 +407,7 @@ const products = [
   {
     id: 35,
     name: "Bánh mì sừng bò truyền thống",
-    price: 20000,
+    price: 45000,
     oldPrice: null,
     image: "../assets/image/4.49.jpg",
     category: "bread",
@@ -417,7 +417,7 @@ const products = [
   {
     id: 36,
     name: "Bánh quy Lava socola",
-    price: 20000,
+    price: 55000,
     oldPrice: null,
     image: "../assets/image/4.22.jpg",
     category: "baked goods",
@@ -426,7 +426,7 @@ const products = [
     {
     id: 37,
     name: "Bánh Cookies Lava socola",
-    price: 30000,
+    price: 55000,
     oldPrice: 40000,
     image: "../assets/image/4.23.jpg",
     category: "baked goods",
@@ -435,7 +435,7 @@ const products = [
     {
     id: 38,
     name: "Bánh Cookies Lava Matcha",
-    price: 30000,
+    price: 55000,
     oldPrice: 45000,
     image: "../assets/image/4.24.jpg",
     category: "baked goods",
@@ -444,8 +444,8 @@ const products = [
   {
     id: 39,
     name: "Mochi Matcha nhân kem chảy",
-    price: 50000,
-    oldPrice: 70000,
+    price: 180000,
+    oldPrice: 200000,
     image: "../assets/image/4.25.jpg",
     category: "baked goods",
     desc: "Vỏ bánh mì mochi dẻo dai sần sật cực kỳ vui miệng, thoảng hương trà xanh tự nhiên. Khi cắn vào, phần nhân kem matcha đặc quánh, bùng nổ vị ngậy béo, ngọt dịu vô cùng gây nghiện.",
@@ -453,7 +453,7 @@ const products = [
   {
     id: 40,
     name: "Bánh su kem vỏ giòn Matcha",
-    price: 30000,
+    price: 95000,
     oldPrice: null,
     image: "../assets/image/4.42.jpg",
     category: "baked goods",
@@ -462,7 +462,7 @@ const products = [
   {
     id: 41,
     name: "Bánh su kem vỏ giòn ngập nhân (Set 4 vị)",
-    price: 30000,
+    price: 100000,
     oldPrice: null,
     image: "../assets/image/4.43.jpg",
     category: "baked goods",
@@ -471,8 +471,8 @@ const products = [
 {
     id: 41,
     name: "Bánh socola hạt phỉ cắt miếng",
-    price: 35000,
-    oldPrice: 40000,
+    price: 150000,
+    oldPrice: 200000,
     image: "../assets/image/4.44.jpg",
     category: "baked goods",
     desc: "Sự kết hợp giữa các tầng kem mousse sô-cô-la đắng nhẹ và kem tươi dẻo mịn gối lên nhau. Mặt bánh được phủ một lớp sốt sô-cô-la đông đặc đan xen hạt phỉ giòn rụm, mang lại hương vị quyến rũ.",
@@ -480,7 +480,7 @@ const products = [
 {
     id: 42,
     name: "Bánh kem phô mai phủ socola viên",
-    price: 35000,
+    price: 100000,
     oldPrice: null,
     image: "../assets/image/4.45.jpg",
     category: "baked goods",
@@ -489,7 +489,7 @@ const products = [
 {
     id: 43,
     name: "Bánh khoai lang nướng mè đen",
-    price: 20000,
+    price: 75000,
     oldPrice: null,
     image: "../assets/image/4.51.jpg",
     category: "baked goods",
@@ -498,8 +498,8 @@ const products = [
 {
     id: 44,
     name: "Bánh sữa tươi nướng phô mai",
-    price: 40000,
-    oldPrice: 50000,
+    price: 90000,
+    oldPrice: 100000,
     image: "../assets/image/4.53.jpg",
     category: "baked goods",
     desc: "Lớp màng bề mặt được nướng cháy xém vàng nâu (Basque style) hơi dai nhẹ, nhưng ẩn sâu bên trong lại là phần cốt sữa chua phô mai mướt mịn, béo ngậy đặc trưng tan chảy trên đầu lưỡi.",
@@ -507,7 +507,7 @@ const products = [
 {
     id: 45,
     name: "Bánh gối ngàn lớp cuộn khoai lang phô mai",
-    price: 35000,
+    price: 100000,
     oldPrice: null,
     image: "../assets/image/4.54.jpg",
     category: "baked goods",
