@@ -24,8 +24,21 @@ if (product) {
 } else {
   document.body.innerHTML = "<h2>Không tìm thấy sản phẩm</h2>";
 } 
-//tăng giảm số lượng
-function tang(){
-  const sluognhap= document.getElementById("quantity");
-  sluognhap.value =parseInt(sluognhap.value) +1;
+
+// Hàm tăng số lượng
+function tangSoLuong() {
+  var quantityInput = document.getElementById('quantity');
+  var currentValue = parseInt(quantityInput.value);
+  
+  quantityInput.value = currentValue + 1;
+}
+
+// Hàm giảm số lượng
+function giamSoLuong() {
+  var quantityInput = document.getElementById('quantity');
+  var currentValue = parseInt(quantityInput.value);
+  
+  if (currentValue > 1) {
+    quantityInput.value = currentValue - 1;
+  }
 }
