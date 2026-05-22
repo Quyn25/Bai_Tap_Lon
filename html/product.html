@@ -60,7 +60,7 @@
       <img id="product-image" />
 
       <div class="info">
-        <h2 id="product-name"></h2>
+        <h2 id="product-name" class="name"></h2>
 
         <p>Loại: <span id="product-category"></span></p>
 
@@ -70,20 +70,14 @@
           <del class="old-price" id="product-old-price"></del>
         </p>
 
-
-        <h4>Mô tả sản phẩm</h4>
-        <p id="product-desc"></p>
-
         <!--số lượng sp-->
         <div class="sluong">
-          <label for="quantity">Số lượng:</label>
-          <div class="tang-giam">
-            <button type="button" class="minus" onclick="giam()">-</button>
-            <!--ô nhập dl-->
-            <input type="number" id="quantity" name="quantity" value="1" min="1"> 
-            <!--value: gtr mặc định -->
-            <button type="button" class="plus" onclick="tang()">+</button>
-
+          <label>Số lượng:</label>
+          <div class="quantity-control">
+            <!-- ô nhập số lượng -->
+            <button onclick="giamSoLuong()">-</button>
+            <input type="number" id="quantity" name="quantity" value="1" min="1">
+            <button onclick="tangSoLuong()">+</button>
           </div>
         </div>
         <!--thêm size bánh-->

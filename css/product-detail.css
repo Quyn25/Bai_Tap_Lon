@@ -1,9 +1,8 @@
 .product {
     display: grid;
 
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
 
-    gap: 50px;
 
     align-items: start;
 
@@ -17,10 +16,22 @@
 .product img {
     width: 100%;
 
-    border-radius: 20px;
+    height: 850px;
+
+    object-fit: cover;
 
     display: block;
 }
+
+.info {
+    padding: 25px;
+}
+
+.name{
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
 
 .price {
     font-size: 36px;
@@ -41,6 +52,15 @@
     margin-left: 20px;
 }
 
+.desc {
+    text-align: justify;
+    font-size: 20px;
+
+    color: #555;
+
+    margin-bottom: 20px;
+}
+
 .add-to-cart {
     display: inline-block;
 
@@ -58,13 +78,27 @@
 
     cursor: pointer;
 }
+
 /*số lượng sản phẩm*/
-.sluong{
+.sluong {
     display: flex;
 
     align-items: center;
 
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.sluong .quantity-control {
+    display: flex;
+
+    align-items: center;
+
+    margin-left: 20px;
+
+    height: 40px;
+
+    text-align: center;
+    font-size: 16px;
 
     gap: 10px;
 
@@ -85,12 +119,14 @@
     font-size:medium; 
 }
 
-.tang-giam input {
-  width: 45px;
-  text-align: center; 
- border: none;
-background-color: whitesmoke;
-font-weight: bold;
+.sluong .quantity-control input {
+    width: 60px;
+
+    height: 100%;
+
+    text-align: center;
+
+    font-size: 16px;
 }
 /*ẩn dấu mũi têm tăng giảm??*/
 .tang-giam input::-webkit-outer-spin-button,
