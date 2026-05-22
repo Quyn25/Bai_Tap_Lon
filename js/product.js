@@ -125,7 +125,7 @@ const products = [
     id: 53,
     name: "Mini Cheesecake xoài tươi",
     price: 85000,
-    oldPrice: 10000,
+    oldPrice: 100000,
     image: "../assets/image/4.37.jpg",
     category: "mousse",
     desc: "Những ổ bánh kem phô mai nhỏ xinh dẻo mịn, béo ngậy đặc trưng, được phủ lớp kem tươi chảy tràn nhẹ nhàng bên hông và nhấn nhá bằng những khối xoài chín ngọt lịm.",

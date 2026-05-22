@@ -29,3 +29,11 @@ function tang(){
   const sluognhap= document.getElementById("quantity");
   sluognhap.value =parseInt(sluognhap.value) +1;
 }
+function giam(){
+  const sluognhap= document.getElementById("quantity");
+  let gtri= parseInt(sluognhap.value); //parseInt:chuyển thành số nguyên
+  //đk khi trừ
+  if (gtri > 1){
+    sluognhap.value = gtri-1; 
+  } 
+}
