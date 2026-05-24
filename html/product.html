@@ -70,14 +70,16 @@
           <del class="old-price" id="product-old-price"></del>
         </p>
 
+        
+
         <!--số lượng sp-->
         <div class="sluong">
-          <label>Số lượng:</label>
-          <div class="quantity-control">
-            <!-- ô nhập số lượng -->
-            <button onclick="giamSoLuong()">-</button>
-            <input type="number" id="quantity" name="quantity" value="1" min="1">
-            <button onclick="tangSoLuong()">+</button>
+          <label for="quantity">Số lượng:</label>
+          <div class="tang-giam">
+            <button type="button" class="minus" onclick="giam()">-</button>
+            <div id="quantity">1</div>
+            <button type="button" class="plus" onclick="tang()">+</button>
+
           </div>
         </div>
         <!--thêm size bánh-->
@@ -85,15 +87,19 @@
           <label> Kích thước: </label>
           <div class="size-list">
             <div class="size">
-              <button type="button">16cm</button>
-              <button type="button">20cm</button>
-              <button type="button">25cm</button>
+              <button type="button" class="btn-size active">16cm</button>
+              <button type="button" class="btn-size">20cm</button>
+              <button type="button" class="btn-size">25cm</button>
             </div>
           </div>
 
         </div>
-        
+
+        <h4>Mô tả sản phẩm</h4>
+        <p id="product-desc"></p>
+
         <button class="add-to-cart">Thêm vào giỏ hàng</button>
+        <button class="buy">Mua ngay</button>
       </div>
 
     </div>
