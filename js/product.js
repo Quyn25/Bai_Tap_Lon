@@ -289,7 +289,7 @@ const products = [
   {
     id: 22,
     name: "Bánh kem khúc cây",
-    price: 4500000,
+    price: 450000,
     oldPrice: null,
     image: "../assets/image/4.8.jpg",
     category: "cake",
@@ -298,7 +298,7 @@ const products = [
   {
     id: 23,
     name: "Bánh kem Red Velvet",
-    price: 3800000,
+    price: 380000,
     oldPrice: null,
     image: "../assets/image/4.9 (2).jpg",
     category: "cake",

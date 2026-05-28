@@ -81,27 +81,36 @@
             <button type="button" class="plus" onclick="tang()">+</button>
 
           </div>
+
+          <button class="add-to-cart">Thêm vào giỏ hàng</button>
         </div>
+
         <!--thêm size bánh-->
         <div class="size-select">
           <label> Kích thước: </label>
           <div class="size-list">
             <div class="size">
-              <button type="button" class="btn-size active">16cm</button>
-              <button type="button" class="btn-size">20cm</button>
-              <button type="button" class="btn-size">25cm</button>
+              <button type="button" class="btn-size active" size-price="0">16cm</button>
+              <button type="button" class="btn-size" size-price="80000">20cm</button>
+              <button type="button" class="btn-size" size-price="100000">25cm</button>
             </div>
           </div>
-
+          
         </div>
-
-        <h4>Mô tả sản phẩm</h4>
+        <button class="buy">Mua ngay</button>
+        
+        <h4 style="text-align: center;">Mô tả sản phẩm</h4>
+        <hr>
         <p id="product-desc"></p>
 
-        <button class="add-to-cart">Thêm vào giỏ hàng</button>
-        <button class="buy">Mua ngay</button>
+        
+        
       </div>
-
+      <h4>Sản phẩm liên quan</h4>
+      <section >
+            <h2 class="title">Bánh Mousse</h2>
+            <div class="list-spham container" id="mousse"></div>
+        </section>
     </div>
   </main>
   <script src="../js/product.js"></script>

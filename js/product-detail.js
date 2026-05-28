@@ -24,6 +24,7 @@ if (product) {
 } else {
   document.body.innerHTML = "<h2>Không tìm thấy sản phẩm</h2>";
 } 
+
 //tăng giảm số lượng
 function tang(){
   const sluognhap= document.getElementById("quantity");
@@ -39,5 +40,69 @@ function giam(){
   }
    
 }
-//kích thước
+//kích thước 
+const btn = document.querySelectorAll(".btn-size");
+//lưu ds btn (tìm kiếm tất cả các phần tử trên web có class là btn-size)
+btn.forEach(button =>{
+//dùng vòng lặp forEach 
+    button.addEventListener("click",function() {
+//khi nào bấm click thì thực hiện function
+      document.querySelector(".btn-size.active").classList.remove("active");
+      //khi click thì xóa active ở nút cũ và trở lại bth
+      this.classList.add("active");
+   //hiển thị giá new
+ //thiếu cộng thêm giá dịch vụ vào giá gốc
+    });
+});
+
+
+//sản phẩm liên quan
+
+
+function renderProducts(category, containerId, currentProductId) {
+  const container = document.getElementById(containerId);
+  
+  // lọc sản phẩm theo category và khác id đang xem (currentProductId)
+  const filtered = products.filter((p) => p.category === category && p.id !== currentProductId);
+  //xóa sau khi chọn sản phẩm khác
+  container.innerHTML = '';
+
+  
+  // duyệt qua các sản phẩm đã lọc 
+  filtered.forEach((p) => {
+    container.innerHTML += `
+        <a href="product.html?id=${p.id}" class="spham">
+        <img src="${p.image}" alt="${p.name}">
+        
+
+        <div>
+          <h3>${p.name}</h3>
+        </div>
+
+        <div class="tien">
+          <div class="gia">
+            <p class="text-gia">
+              ${formatPrice(p.price)}<u>đ</u>
+
+              ${
+                p.oldPrice
+                  ? `
+                <del>${formatPrice(p.oldPrice)}đ</del>
+              `
+                  : ""
+              }
+            </p>
+          </div>
+
+          <button class="hang">
+            <img src="../assets/image/shopping-cart.svg">
+          </button>
+        </div>
+        </a>
+    `;
+  });
+}
+//hiện lên màn hình sp liên quan 
+renderProducts(product.category,'sp-lquan',product.id);
+
 
