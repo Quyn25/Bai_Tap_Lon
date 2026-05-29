@@ -1,11 +1,4 @@
-/**
- * Định dạng giá tiền theo định dạng Việt Nam
- * @param {*} price
- * @returns
- */
-function formatPrice(price) {
-  return price.toLocaleString("vi-VN");
-}
+// Hàm formatPrice đã được chuyển sang common.js
 
 /**
  * Lọc sản phẩm theo các category được chọn
@@ -95,6 +88,17 @@ function initFilters() {
 document.addEventListener("DOMContentLoaded", () => {
   renderFilteredProducts("all-products");
   initFilters();
+  updateCartCount();
+});
+
+// Sự kiện click vào icon giỏ hàng
+document.querySelectorAll('#gio').forEach(icon => {
+  if (icon.src && icon.src.includes('cart.svg')) {
+    icon.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.location.href = '../html/cart.html';
+    });
+  }
 });
 
 renderFilteredProducts("all-products");

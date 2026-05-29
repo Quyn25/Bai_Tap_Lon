@@ -1,12 +1,14 @@
+<!DOCTYPE html>
 <html>
 
 <head>
-  <title>Chi tiết sản phẩm - Quyn Bakery</title>
+  <meta charset="UTF-8">
+  <title>Giỏ hàng - Quyn Bakery</title>
   <link rel="icon" type="image/png" href="../assets/image/logo_2.png">
   <link rel="stylesheet" href="../css/main.css">
   <link rel="stylesheet" href="../css/common/menu.css">
-  <link rel="stylesheet" href="../css/product-detail.css">
   <link rel="stylesheet" href="../css/common/footer.css">
+  <link rel="stylesheet" href="../css/cart.css">
 </head>
 
 <body>
@@ -48,7 +50,6 @@
                 <li><a href="#">Hệ thống cửa hàng</a></li>
               </ul>
             </li>
-            </li>
           </ul>
         </div>
         <div class="right">
@@ -57,70 +58,51 @@
         </div>
       </div>
     </section>
-    <div class="product container">
-
-      <img id="product-image" />
-
-      <div class="info">
-        <h2 id="product-name" class="name"></h2>
-
-        <p>Loại: <span id="product-category"></span></p>
-
-        <p class="price">
-          <span id="product-price"></span>
-
-          <del class="old-price" id="product-old-price"></del>
-        </p>
-
+    
+    <div class="cart-container">
+      <h2>Giỏ hàng của bạn</h2>
+      <div class="cart-content">
+        <table class="cart-table" border="1">
+          <thead>
+            <tr>
+              <th>Hình ảnh</th>  
+              <th>Sản phẩm</th>
+              <th>Đơn giá</th>
+              <th>Số lượng</th>
+              <th>Tổng cộng</th>
+              <th>Thao tác</th>
+            </tr>
+          </thead>
+          <tbody id="cart-body">
+            <!-- Dữ liệu giỏ hàng sẽ được hiển thị ở đây -->
+          </tbody>
+        </table>
         
-
-        <!--số lượng sp-->
-        <div class="sluong">
-          <label for="quantity">Số lượng:</label>
-          <div class="tang-giam">
-            <button type="button" class="minus" onclick="giam()">-</button>
-            <div id="quantity">1</div>
-            <button type="button" class="plus" onclick="tang()">+</button>
-
+        <div class="cart-summary">
+          <div class="cart-total">
+            <strong>Tổng tiền: </strong>
+            <span id="total-amount">0</span> <u>đ</u>
+          </div>
+          <div class="cart-actions">
+            <button id="clear-cart-btn" class="clear-cart-btn">🗑️ Xóa giỏ hàng</button>
+            <button id="checkout-btn" class="checkout-btn">💰 Thanh toán</button>
           </div>
         </div>
-        <!--thêm size bánh-->
-        <div class="size-select">
-          <label> Kích thước: </label>
-          <div class="size-list">
-            <div class="size">
-              <button type="button" class="btn-size active">16cm</button>
-              <button type="button" class="btn-size">20cm</button>
-              <button type="button" class="btn-size">25cm</button>
-            </div>
-          </div>
-
-        </div>
-
-        <h4>Mô tả sản phẩm</h4>
-        <p id="product-desc"></p>
-
-        <button class="add-to-cart">Thêm vào giỏ hàng</button>
-        <button class="buy">Mua ngay</button>
       </div>
-
     </div>
   </main>
+
+  <!-- Link file JavaScript -->
   <script src="../js/product.js"></script>
   <script src="../js/common.js"></script>
-  <script src="../js/product-detail.js"></script>
+  <script src="../js/cart.js"></script>
 
 </body>
-
-
-
-
-
 
 <footer>
   <div>
     <ul class="lhe">
-      <h3>LIÊN HỆ </h3>
+      <h3>LIÊN HỆ</h3>
       <li>
         <img src="../assets/image/home.svg" alt="địa chỉ">Khu phố Bình Đường 4,
         Bình Dương, Thành phố Hồ Chí Minh
@@ -163,6 +145,5 @@
     <p style="text-align: center;">Copywriting &copy 2026 by Quyn Bakery</p>
   </div>
 </footer>
-
 
 </html>
