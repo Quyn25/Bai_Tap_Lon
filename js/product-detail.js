@@ -37,7 +37,6 @@ function giam(){
     sluognhap.innerText = gtri - 1;
   }
 }
-<<<<<<< HEAD
 //kích thước 
 const btn = document.querySelectorAll(".btn-size");
 //lưu ds btn (tìm kiếm tất cả các phần tử trên web có class là btn-size)
@@ -103,7 +102,6 @@ function renderProducts(category, containerId, currentProductId) {
 //hiện lên màn hình sp liên quan 
 renderProducts(product.category,'sp-lquan',product.id);
 
-=======
 
 // Khởi tạo
 document.addEventListener("DOMContentLoaded", () => {
@@ -119,5 +117,4 @@ document.querySelectorAll('#gio').forEach(icon => {
     });
   }
 });
->>>>>>> ac50b09220f29c46ce994ae30aa478899eeaae78
 
