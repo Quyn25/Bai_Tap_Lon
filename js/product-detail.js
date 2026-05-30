@@ -1,6 +1,4 @@
-function formatPrice(price) {
-  return price.toLocaleString("vi-VN");
-}
+// Hàm formatPrice đã được chuyển sang common.js
 
 // lấy id từ URL
 const params = new URLSearchParams(window.location.search);
@@ -38,8 +36,8 @@ function giam(){
   if (gtri>1){
     sluognhap.innerText = gtri - 1;
   }
-   
 }
+<<<<<<< HEAD
 //kích thước 
 const btn = document.querySelectorAll(".btn-size");
 //lưu ds btn (tìm kiếm tất cả các phần tử trên web có class là btn-size)
@@ -105,4 +103,21 @@ function renderProducts(category, containerId, currentProductId) {
 //hiện lên màn hình sp liên quan 
 renderProducts(product.category,'sp-lquan',product.id);
 
+=======
+
+// Khởi tạo
+document.addEventListener("DOMContentLoaded", () => {
+  updateCartCount();
+});
+
+// Sự kiện click vào icon giỏ hàng
+document.querySelectorAll('#gio').forEach(icon => {
+  if (icon.src && icon.src.includes('cart.svg')) {
+    icon.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.location.href = '../html/cart.html';
+    });
+  }
+});
+>>>>>>> ac50b09220f29c46ce994ae30aa478899eeaae78
 
