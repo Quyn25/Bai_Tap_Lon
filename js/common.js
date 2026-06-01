@@ -172,3 +172,13 @@ function themVaoGioHang(productId, event) {
 //     window.location.href = "../html/cart.html";
 // });
 
+const searchBtn = document.querySelector('#gio[src*="search.svg"]');
+const searchDropdown = document.getElementById("search-dropdown");
+
+searchBtn.addEventListener("click", () => {
+    searchDropdown.classList.toggle("active");
+
+    if (searchDropdown.classList.contains("active")) {
+        searchDropdown.querySelector("input").focus();
+    }
+});
