@@ -29,13 +29,13 @@
                 <li><a href="../html/page3.html">Bánh ngọt nhỏ</a></li>
               </ul>
             </li>
-            <li class="down">
+            <!-- <li class="down">
               <a href="#">Khuyến mãi</a>
               <ul class="menu-be">
                 <li><a href="#">Giảm giá sốc</a> </li>
                 <li><a href="#">Combo mùa hè</a> </li>
               </ul>
-            </li>
+            </li> -->
             <li class="down">
               <a href="#">Tin tức</a>
               <ul class="menu-be">
@@ -53,19 +53,26 @@
           </ul>
         </div>
         <div class="right">
-          <img id="gio" src="../assets/image/search.svg" alt="tìm kiếm">
-          <img id="gio" src="../assets/image/cart.svg" alt="giỏ hàng">
+          <img id="gio" src="../assets/image/search.svg" alt="Tìm kiếm">
+          <div id="cart-icon">
+            <img id="gio" src="../assets/image/cart.svg" alt="giỏ hàng">
+          </div>
+          <div id="search-dropdown" class="search-dropdown">
+            <form action="product-list.html" method="GET">
+              <input type="text" name="keyword" placeholder="Tìm bánh...">
+            </form>
+          </div>
         </div>
       </div>
     </section>
-    
+
     <div class="cart-container">
       <h2>Giỏ hàng của bạn</h2>
       <div class="cart-content">
-        <table class="cart-table" border="1">
+        <table class="cart-table">
           <thead>
             <tr>
-              <th>Hình ảnh</th>  
+              <th>Hình ảnh</th>
               <th>Sản phẩm</th>
               <th>Đơn giá</th>
               <th>Số lượng</th>
@@ -77,14 +84,13 @@
             <!-- Dữ liệu giỏ hàng sẽ được hiển thị ở đây -->
           </tbody>
         </table>
-        
+
         <div class="cart-summary">
           <div class="cart-total">
             <strong>Tổng tiền: </strong>
             <span id="total-amount">0</span> <u>đ</u>
           </div>
           <div class="cart-actions">
-            <button id="clear-cart-btn" class="clear-cart-btn">🗑️ Xóa giỏ hàng</button>
             <button id="checkout-btn" class="checkout-btn">💰 Thanh toán</button>
           </div>
         </div>
