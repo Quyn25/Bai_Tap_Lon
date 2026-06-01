@@ -24,13 +24,20 @@ if (product) {
 } 
 
 //tăng giảm số lượng
-//tăng giảm số lượng - sử dụng hàm từ common.js
 function tang(){
-  increaseQuantity('#quantity');
+  const sluognhap= document.getElementById("quantity");
+  let gtri= parseInt(sluognhap.innerText);
+  sluognhap.innerText= gtri +1;
 }
 function giam(){
-  decreaseQuantity('#quantity', 1);
+  const sluognhap= document.getElementById("quantity");
+  let gtri = parseInt(sluognhap.innerText);
+  //điều kiện
+  if (gtri>1){
+    sluognhap.innerText = gtri - 1;
+  }
 }
+
 //kích thước 
 const btn = document.querySelectorAll(".btn-size");
 //lưu ds btn (tìm kiếm tất cả các phần tử trên web có class là btn-size)
@@ -129,10 +136,24 @@ document.addEventListener("DOMContentLoaded", () => {
  * @param {boolean} redirectToCart - Có chuyển hướng sang trang cart không
  */
 function themVaoGioHangTuDetail(redirectToCart = false) {
-  // Lấy số lượng từ UI bằng hàm chia sẻ
-  const quantity = getQuantity('#quantity');
+  // Cách 1: Lấy trực tiếp từ element #quantity (dùng chính element mà tang/giam đang dùng)
+  const quantityElement = document.getElementById("quantity");
+  
+  if (!quantityElement) {
+    console.error('Không tìm thấy phần tử số lượng!');
+    return;
+  }
+  
+  // Lấy giá trị từ innerText (giống như trong hàm tang/giam)
+  const quantity = parseInt(quantityElement.innerText);
+  
+  // Kiểm tra số lượng hợp lệ
+  if (isNaN(quantity) || quantity < 1) {
+    console.error('Số lượng không hợp lệ');
+    return;
+  }
 
-  // Tìm sản phẩm theo id
+  // Tìm sản phẩm theo id (dùng biến global id đã có ở trên)
   const product = products.find(p => p.id === id);
 
   if (!product) {

@@ -29,7 +29,6 @@
 
 .continue-shopping-btn {
     display: inline-block;
-    margin-top: 20px;
     padding: 12px 24px;
     background-color: #8B4513;
     color: white;
@@ -118,7 +117,8 @@
 
 .cart-actions {
     display: flex;
-    gap: 10px;
+    justify-content: center;
+    gap: 40px;
 }
 
 .checkout-btn, .clear-cart-btn {

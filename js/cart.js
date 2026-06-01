@@ -28,15 +28,6 @@ function removeFromCart(productId) {
     renderCart();
 }
 
-// Hàm xóa toàn bộ giỏ hàng
-function clearCart() {
-    if (confirm('Bạn có chắc chắn muốn xóa toàn bộ giỏ hàng?')) {
-        localStorage.removeItem('cart');
-        renderCart();
-        showNotification('Đã xóa toàn bộ giỏ hàng!', 'success');
-    }
-}
-
 // Hàm render giỏ hàng ra table
 function renderCart() {
     const cart = getCart();
@@ -51,7 +42,6 @@ function renderCart() {
                 <td colspan="6" style="text-align: center; padding: 60px 20px;">
                     <div class="empty-cart">
                         <p style="font-size: 18px; color: #666;">🛒 Giỏ hàng của bạn đang trống!</p>
-                        <a href="../html/trangchu.html" class="continue-shopping-btn">Tiếp tục mua sắm</a>
                     </div>
                 </td>
             </tr>
