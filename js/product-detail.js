@@ -22,6 +22,8 @@ if (product) {
 } else {
   document.body.innerHTML = "<h2>Không tìm thấy sản phẩm</h2>";
 } 
+
+//tăng giảm số lượng
 //tăng giảm số lượng - sử dụng hàm từ common.js
 function tang(){
   increaseQuantity('#quantity');

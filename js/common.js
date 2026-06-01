@@ -21,7 +21,7 @@ function getCart() {
 }
 
 /**
- * Hàm lưu giỏ hàng vào localStorage
+ * Hàm lưu giỏ hàng vào localStorage(bộ nhớ trình duyệt)
  * @param {Array} cart - Mảng các sản phẩm trong giỏ hàng
  */
 function saveCart(cart) {
@@ -45,7 +45,7 @@ function calculateTotal(cart) {
 /**
  * Hàm tính tổng số lượng sản phẩm trong giỏ hàng
  * @param {Array} cart - Mảng các sản phẩm trong giỏ hàng
- * @returns {number} Tổng số lượng sản phẩm
+ * @returns {number} Tổng số lượng sản phẩm trong giỏ hàng
  */
 function getTotalItems(cart) {
     return cart.reduce((total, item) => total + item.quantity, 0);
@@ -172,13 +172,3 @@ function themVaoGioHang(productId, event) {
 //     window.location.href = "../html/cart.html";
 // });
 
-const searchBtn = document.querySelector('#gio[src*="search.svg"]');
-const searchDropdown = document.getElementById("search-dropdown");
-
-searchBtn.addEventListener("click", () => {
-    searchDropdown.classList.toggle("active");
-
-    if (searchDropdown.classList.contains("active")) {
-        searchDropdown.querySelector("input").focus();
-    }
-});
