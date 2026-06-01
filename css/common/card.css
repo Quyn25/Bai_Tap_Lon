@@ -38,6 +38,8 @@
 .spham {
     min-width: 270px;
 
+    min-height: 380px;  /* Chiều cao tối thiểu */
+
     flex-shrink: 0;
 
     background: #fff;
@@ -49,6 +51,10 @@
     overflow: auto;
 
     transition: 0.3s;
+}
+
+.spham h3 {
+    height: 30px ;
 }
 
 /*bỏ gạch dưới của text*/

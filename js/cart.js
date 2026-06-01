@@ -66,12 +66,12 @@ function renderCart() {
         html += `
             <tr data-product-id="${item.id}" class="cart-item">
                 <td class="cart-product-image">
-                    <img src="${item.image}" alt="${item.name}" width="80" height="80" style="object-fit: cover;">
+                    <img src="${item.image}" alt="${item.name}"" class="cart-image">
                 </td>
-                <td class="cart-product-name">${item.name}</td>
-                <td class="cart-product-price">${formatPrice(item.price)}<u>đ</u></td>
-                <td class="cart-product-quantity">
-                    <div class="quantity-control">
+                <td>${item.name}</td>
+                <td>${formatPrice(item.price)}<u>đ</u></td>
+                <td>
+                    <div>
                         <button class="quantity-btn minus" data-id="${item.id}">-</button>
                         <input type="number" class="quantity-input" data-id="${item.id}" value="${item.quantity}" min="1">
                         <button class="quantity-btn plus" data-id="${item.id}">+</button>
@@ -205,13 +205,7 @@ function checkout() {
 function init() {
     renderCart();
     updateCartIconCount();
-
-    const clearCartBtn = document.getElementById('clear-cart-btn');
-    if (clearCartBtn) {
-        clearCartBtn.removeEventListener('click', clearCart);
-        clearCartBtn.addEventListener('click', clearCart);
-    }
-
+    
     const checkoutBtn = document.getElementById('checkout-btn');
     if (checkoutBtn) {
         checkoutBtn.removeEventListener('click', checkout);

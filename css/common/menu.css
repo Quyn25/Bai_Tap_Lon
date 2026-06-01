@@ -36,6 +36,8 @@
     align-items: center;
 
     gap: 20px;
+
+    position: relative;
 }
 
 #logo {
@@ -45,6 +47,9 @@
 #gio {
     height: 40px;
     cursor: pointer;
+    justify-content: s;
+}
+.search-btn {
     justify-content: s;
 }
 
@@ -105,4 +110,60 @@
 /* HIỆN MENU CON */
 .down:hover .menu-be {
     display: block;
+}
+
+/* TÌM KIẾM */
+.search-dropdown{
+    position: absolute;
+
+    top: 55px;
+    right: 50px;
+
+    width: 280px;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+
+    transition: .3s;
+}
+
+.search-dropdown.active{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.search-dropdown input{
+    width: 100%;
+    height: 42px;
+
+    padding: 0 15px;
+
+    border: 1px solid #ddd;
+    border-radius: 25px;
+
+    background: white;
+
+    box-sizing: border-box;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,.1);
+}
+
+/* KHI KHÔNG TÌM THẤY SẢN PHẨM */
+.empty-search{
+    grid-column: 1 / -1;
+
+    text-align:center;
+
+    padding:60px 20px;
+}
+
+.empty-search h3{
+    color:#5A3E2B;
+    margin-bottom:10px;
+}
+
+.empty-search p{
+    color:#888;
 }

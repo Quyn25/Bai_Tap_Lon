@@ -20,20 +20,20 @@
                     <ul class="main-menu">
                         <li><a href="../html/trangchu.html">Trang chủ</a></li>
                         <li class="down">
-                            <a href="#">Sản phẩm</a>
+                            <a href="../html/product-list.html">Sản phẩm</a>
                             <ul class="menu-be">
                                 <li><a href="../html/page1.html">Bánh Mousse</a></li>
                                 <li><a href="../html/page2.html">Bánh mì & Bánh mặn</a></li>
                                 <li><a href="../html/page3.html">Bánh ngọt nhỏ</a></li>
                             </ul>
                         </li>
-                        <li class="down">
+                        <!-- <li class="down">
                             <a href="#">Khuyến mãi</a>
                             <ul class="menu-be">
                                 <li><a href="#">Giảm giá sốc</a> </li>
                                 <li><a href="#">Combo mùa hè</a> </li>
                             </ul>
-                        </li>
+                        </li> -->
                         <li class="down">
                             <a href="#">Tin tức</a>
                             <ul class="menu-be">
@@ -52,8 +52,15 @@
                     </ul>
                 </div>
                 <div class="right">
-                    <img id="gio" src="../assets/image/search.svg" alt="tìm kiếm">
-                    <img id="gio" src="../assets/image/cart.svg" alt="giỏ hàng">
+                    <img id="gio" src="../assets/image/search.svg" alt="Tìm kiếm">
+                    <div id="cart-icon">
+                        <img id="gio" src="../assets/image/cart.svg" alt="giỏ hàng">
+                    </div>
+                    <div id="search-dropdown" class="search-dropdown">
+                        <form action="product-list.html" method="GET">
+                            <input type="text" name="keyword" placeholder="Tìm bánh...">
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
@@ -69,27 +76,27 @@
                         <h3>Danh mục</h3>
 
                         <label>
-                            <input type="checkbox" value="mousse">
+                            <input type="checkbox" name="category" value="mousse">
                             Bánh mousse
                         </label>
 
                         <label>
-                            <input type="checkbox" value="bread salty">
+                            <input type="checkbox" name="category"  value="bread salty">
                             Bánh mặn
                         </label>
 
                         <label>
-                            <input type="checkbox" value="cake">
+                            <input type="checkbox" name="category" value="cake">
                             Bánh kem
                         </label>
 
                         <label>
-                            <input type="checkbox" value="bread">
+                            <input type="checkbox" name="category" value="bread">
                             Bánh mì
                         </label>
 
                         <label>
-                            <input type="checkbox" value="baked goods">
+                            <input type="checkbox" name="category" value="baked goods">
                             Bánh nướng
                         </label>
                     </div>
@@ -100,17 +107,17 @@
                         <h3>Mức giá</h3>
 
                         <label>
-                            <input type="radio" name="price">
+                            <input type="checkbox" name="price" value="under-100">
                             Dưới 100k
                         </label>
 
                         <label>
-                            <input type="radio" name="price">
+                            <input type="checkbox" name="price" value="100-300">
                             100k - 300k
                         </label>
 
                         <label>
-                            <input type="radio" name="price">
+                            <input type="checkbox" name="price" value="over-300">
                             Trên 300k
                         </label>
 
