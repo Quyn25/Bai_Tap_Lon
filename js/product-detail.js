@@ -37,7 +37,7 @@ function giam(){
     sluognhap.innerText = gtri - 1;
   }
 }
-
+/** 
 //kích thước 
 const btn = document.querySelectorAll(".btn-size");
 //lưu ds btn (tìm kiếm tất cả các phần tử trên web có class là btn-size)
@@ -48,10 +48,18 @@ btn.forEach(button =>{
       document.querySelector(".btn-size.active").classList.remove("active");
       //khi click thì xóa active ở nút cũ và trở lại bth
       this.classList.add("active");
-   //hiển thị giá new
- //thiếu cộng thêm giá dịch vụ vào giá gốc
+
+   //Tính tiền mới
+  //khai báo giá mới
+  const sizePrice = parseInt(this.getAttribute('size-price'));
+  //tính toán giá mới 
+    newPrice = product.price + sizePrice;  
+  //hiển thị ra màn hình
+    document.getElementById('product-price').innerText = formatPrice(newPrice) +'đ'
+  })
+
     });
-});
+*/
 
 
 //sản phẩm liên quan
