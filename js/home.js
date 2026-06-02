@@ -46,6 +46,7 @@ function renderProducts(category, containerId) {
         `;
     });
     
+    
     // Sau khi render xong, gán sự kiện click cho tất cả các button "hang"
     const cartButtons = container.querySelectorAll('.hang');
     cartButtons.forEach(button => {

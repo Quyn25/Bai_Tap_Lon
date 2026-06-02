@@ -129,7 +129,7 @@ function themVaoGioHang(productId, event) {
         event.preventDefault();
     }
 
-    // Tìm sản phẩm theo id
+    // Tìm sản phẩm theo id //SEARCH
     const product = products.find(p => p.id === productId);
 
     if (!product) {
